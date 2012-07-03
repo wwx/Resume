@@ -1,0 +1,92 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\textheight=10in
+%\raggedbottom
+\raggedright
+\pagestyle{empty}
+
+  %\renewcommand{\encodingdefault}{cg}
+  \renewcommand{\sfdefault}{ptm}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+\newcommand{\area}[2]{\vspace*{-9pt} \begin{verse}\textbf{#1}   #2 \end{verse}  }
+\newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-18pt} \hrulefill \\}
+\newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt} \textsc{#1}} \vspace*{-6pt} \lineunder}
+\newcommand{\project}[3]{{ \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }}
+\newcommand{\contact}[3]{
+\vspace*{-8pt}
+\begin{center}
+{\LARGE \scshape {#1}}\\
+#2 \lineunder 
+#3
+\end{center}
+\vspace*{-8pt}
+}
+\newcommand{\activity}[2]{{\textbf{#1}(#2)\\}}
+\newenvironment{achievements}{\begin{list}{$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}}
+\newcommand{\schoolwithcourses}[4]{
+ \textbf{#1} #2 $\bullet$ #3\\ 
+#4 $\bullet$  Selected Coursework:\\
+\vspace*{5pt}
+}
+\newcommand{\school}[4]{#1\hspace*{2pt},\hspace*{2pt}{#2} 
+						\\\hspace*{6pt} \textbf{#3}
+						\\ \hspace*{6pt}#4\\
+						}
+% END RESUME DEFINITIONS
+\begin{document}
+\contact{Wu Wenxuan}
+{Si Chuan University,Wu Hou Section Yi Huan Road, Cheng Du City, SiChuan}
+{mobile: 13402897793 $\bullet$ wwx0306@gmail.com }
+\header{Education}
+%\schoolwithcourses{Si Chuan University}{Bachelor of Software Engineering,2006-2010}{Average:85.3}
+%\schoolwithcourese{Si Chuan University}{Master of Software ENgineering,2010-2013}{Average Score:80.4}
+\school{Si Chuan University}{2010-2013}{Master Degree in Software Engineering}{Average Score:80.4}
+\school{Si Chuan University}{2006-2010}{Bachelor Degree in Software Engineering}{Average Score:85.3}
+\header{Project Experience}
+\project{China Ark MySQL Database backup and recovery system}{2010}{Software Engineer}
+	\begin{achievements}
+	  \item Invested in MySQL architecture ,good knowledge of MySQL innodb data engine .
+	  \item Designed a logic backup strategy and physical bacup strategy.
+	  \item Coded a incremental backup metho based on Innodb storage architecture based on LSN(Log Sequence Number).
+	  \end{achievements}
+\project{China Ark Database backup and recovery system }{2010}{Software Engineer}
+	\begin{achievements}
+	  \item Designed and developed a SQL abstraction layer and command-line interface over the proprietary db.
+	  \item Snapshot technology ,online backup and warm backup supported. Different windows version supported. XP, Vista, Server . Windows Volume shadow service research.Good Knowlege of Windows SnapShot technology . 
+	  \item A new method to autoload dlls under different Windows versions instead of static code complile procedure.
+	\end{achievements}
+\header{Skills}
+	\begin{achievements}
+		\item Familiarity with UNIX,GUN/Linux,Win32.
+		\item Familiarity with RegularExpressions,Threads,Sockets,MySQL,\LaTeX
+		\item Familiarity with Python,C,C++,bash.
+		\item Familiar with computer system architecture, to understand x86 assembly language;
+	\end{achievements}
+\header{Awards and Hornors}
+	\begin{achievements}	
+		\item Sep 2010,The second-class scholarship of Sichuan University
+		\item Jun 2011,The third-class scholarship of Sichuan University
+		\item 2006-2007,The second-class scholarship of Sichuan University
+		\item 2008-2009 ,The second-class scholarship of Sichuan University
+	\end{achievements}
+\header{Students Activities}
+	\begin{achievements}
+		\item 10-11 The Google’s fourth beneficial warm China's excellent project execution team 
+		\item Jun 2009 The Second  National Students Information Security Competition
+	\end{achievements}
+\header{Language skill}
+	\begin{achievements}
+		\item Reading documents fluently  
+		\item Use man, google, stackoverflow to solove coding related problems. 
+		\item CET-4,CET-6.
+	\end{achievements}
+\header{Personality}
+	\begin{achievements}
+	\item Enjoy coding, study, ubuntu ,keyboard. 
+	\item Detail oriented, flexible, and adaptable.
+	\end{achievements}	
+\end{document}
